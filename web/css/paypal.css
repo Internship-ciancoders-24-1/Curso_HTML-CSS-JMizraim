@@ -1,0 +1,12 @@
+body {
+    background-color: var(--cyan-dark);
+}
+
+.message-container {
+    color: var(--white);
+    text-align: center;
+}
+
+.message-container a {
+    color: var(--green)
+}

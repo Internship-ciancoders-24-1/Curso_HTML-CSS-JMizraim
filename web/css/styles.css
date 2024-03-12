@@ -3,22 +3,27 @@
   --blue-solid: #0000ff;
   --green: #7acc2d;
   --white: #fff;
+  --black: #000;
+  --cyan-dark: #0a192f;
+  
+  --shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-html {
-  font-size: 62.5%;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.6rem;
+  font-size: 16px;
   background-color: var(--white);
 }
 
 /* Utilities */
-.container {
+.my-container {
   display: block;
-  max-width: 124rem;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
@@ -29,18 +34,19 @@ body {
 }
 
 .nav {
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 .nav__brand {
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 .nav__options {
   display: flex;
-  gap: 2rem;
+  align-items: center;
+  gap: 20px;
   list-style: none;
   margin: 0;
 }
@@ -57,8 +63,12 @@ body {
 
 /* Main */
 
-.main {
-  padding: 8rem 0 12rem 0;
+main {
+  min-height: calc(100vh - (58.4px + 47.6px));
+}
+
+.index-main {
+  padding: 80px 0 120px 0;
   background-image: url("../assets/images/wave.svg");
   background-position: bottom;
   background-repeat: no-repeat;
@@ -66,37 +76,37 @@ body {
 }
 
 .main__heading {
-  max-width: 64rem;
+  max-width: 640px;
   text-align: center;
-  margin: 0 auto 4rem auto;
+  margin: 0 auto 40px auto;
 }
 
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 20px;
 }
 
 /* Cards */
 
 .products__card {
   background-color: var(--white);
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  padding: 3.5rem 2rem;
-  width: 24rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 35px 20px;
+  width: 240px;
 }
 
 .card__image-container {
   display: flex;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 .card__image-container img {
   max-width: 100%;
-  height: 10rem;
+  height: 100px;
 }
 
 .card__header h3,
@@ -105,7 +115,7 @@ body {
 }
 
 .card__header h3 {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .card__content p {
@@ -113,17 +123,80 @@ body {
 }
 
 .card__actions {
-  margin-top: 1.5rem;
+  margin-top: 15px;
 }
 
 .card__button {
   background-color: var(--green);
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 5px;
   color: var(--white);
   cursor: pointer;
-  font-size: 1.6rem;
-  padding: 1rem 2rem;
+  font-size: 16px;
+  padding: 10px 20px;
   transition: background-color 0.2s;
   width: 100%;
+}
+
+.footer {
+    background-color: var(--green);
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    color: var(--white);
+}
+
+.footer__container p {
+    margin: 0;
+}
+
+
+/* Sale */
+
+.sale-main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: calc(100vh - (58.4px + 47.6px));
+}
+
+.sale-main .container {
+  width: 90%;
+}
+
+.payment_module, .form {
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 10px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container form label {
+  font-size: 14px;
+  display: block;
+}
+
+.form-container form input {
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--black);
+  width: 100%;
+}
+
+/* messages */
+
+.message-main {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: calc(100vh);
 }

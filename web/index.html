@@ -8,15 +8,20 @@
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css//animations.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css//animations.css" />
   </head>
   <body>
     <header class="main-header fadeInDown">
-      <nav class="nav container">
-        <div class="nav__brand">BRAND</div>
+      <nav class="nav my-container">
+        <div class="nav__brand">
+          <a href="./index.html">BRAND</a>
+        </div>
         <ul class="nav__options">
           <li>
             <a href="#">Faqs</a>
@@ -27,8 +32,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main">
-      <div class="container">
+    <main class="index-main">
+      <div class="my-container">
         <h1 class="main__heading">
           Esto es un producto increible, no se que haces viendo si lo puedes
           tener
@@ -36,36 +41,40 @@
         <div class="products fadeIn">
           <article class="products__card fadeInUp">
             <div class="card__image-container">
-              <img src="./assets/images/box.png" alt="box">
+              <img src="./assets/images/box.png" alt="box" />
             </div>
             <header>
               <h3>Producto 1</h3>
             </header>
             <div class="card__content">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-              <footer class="card__actions">
-              <button class="card__button">Lo veo, lo quiero</button>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <footer class="card__actions">
+              <a href="./sale.html" class="card__button">Lo veo, lo quiero</a>
             </footer>
           </article>
           <article class="products__card fadeInUp">
             <div class="card__image-container">
-              <img src="./assets/images/box.png" alt="box">
+              <img src="./assets/images/box.png" alt="box" />
             </div>
             <header>
               <h3>Producto 2</h3>
             </header>
             <div class="card__content">
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
             </div>
-              <footer class="card__actions">
-              <button class="card__button">Lo veo, lo quiero</button>
+            <footer class="card__actions">
+              <a href="./sale.html" class="card__button">Lo veo, lo quiero</a>
             </footer>
           </article>
         </div>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__container my-container">
+        <p>Terminos y condiciones</p>
+        <p>contacto@brand.com</p>
+      </div>
+    </footer>
   </body>
 </html>
