@@ -1,0 +1,17 @@
+body {
+    background-color: skyblue;
+}
+
+main, header {
+    display: grid;
+    place-items: center;
+}
+
+.about-day {
+    font-style: italic;
+}
+
+.link {
+    display: block;
+    text-align: center;
+}
